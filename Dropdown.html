@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <title>DropDown</title>
+    <style>
+        .nav,
+        .fodd_list {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .fodd_list {
+            width: 400px;
+            justify-content: space-evenly;
+        }
+
+        .fodd_list button {
+            border: 1px solid rgb(255, 200, 98);
+            background-color: white;
+            text-align: center;
+            width: 80px;
+            height: 30px;
+
+
+        }
+
+        .btn:hover {
+            text-align: center;
+            border: 1px solid black;
+            background-color: rgb(255, 200, 98);
+
+        }
+
+
+
+        .nav {
+            justify-content: space-between;
+        }
+
+        .displaynone {
+            display: none;
+            /* position: absolute; */
+            margin-top: -10px;
+            margin-left: -15px;
+        }
+
+
+
+        .Food:hover .displaynone {
+            display: block;
+        }
+
+        .ol {
+            list-style-type: none;
+        }
+
+
+
+        .displaynone ol li {
+            border: 1px solid black;
+            text-align: center;
+            background-color: rgb(255, 191, 72);
+        }
+
+        .bouutondisp {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .btn:hover .bouutondisp {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <div class="nav">
+            <div class="Food">FOOD STORE
+
+                <div class="displaynone">
+                    <ol class="ol">
+                        <li>DOSA</li>
+                        <li>Chapathi</li>
+                        <li>Puri</li>
+
+                    </ol>
+                </div>
+
+            </div>
+            <div class="fodd_list">
+                <button class="btn">HOME
+                    <div class="bouutondisp">
+                        <p>dosa</p>
+                    </div>
+
+                </button>
+                <button class="btn">HOME</button>
+                <button class="btn">HOME</button>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
